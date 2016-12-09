@@ -39,7 +39,7 @@ or die ('Could not select database ' . mysql_error());
 $csv_export = '';
 
 // query to get data from database:
-$query = mysql_query("SELECT ".db_select." FROM ".$db_table." ".$where);
+$query = mysql_query("SELECT ".$db_select." FROM ".$db_table." ".$where);
 $field = mysql_num_fields($query);
 
 // create line with field names:
